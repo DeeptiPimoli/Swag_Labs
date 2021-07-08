@@ -1,0 +1,9 @@
+ChromeDriver=C:\\Software\\chromedriver.exe
+
+browser = chrome
+
+URL=https://www.saucedemo.com
+
+username=standard_user
+
+password=secret_sauce
