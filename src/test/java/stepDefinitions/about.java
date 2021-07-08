@@ -22,7 +22,7 @@ public class about
 	public static WebDriver driver;
 	String baseUrl="https://www.saucedemo.com/";
 	
-	aboutPage PF;
+	aboutPage PF1;
 	
 	public void takeSS(String FileName) throws IOException
 	{
@@ -52,7 +52,7 @@ public class about
        System.out.println("The user is on SwagLabs home page");
        takeSS("HomePage");
        
-       PF= new aboutPage(driver);
+       PF1= new aboutPage(driver);
 	}
 
 	@When("user clicks on Hamburger menu")
