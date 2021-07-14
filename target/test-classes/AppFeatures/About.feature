@@ -1,6 +1,7 @@
-#Author: deepti.pimoli@capgemini.com
+ #Author: deepti.pimoli@capgemini.com
 Feature: View about SauceLabs
  
+ @about
 	Scenario: Viewing about page
 	    Given The user is on SwagLabs home page
 	    When user clicks on Hamburger menu

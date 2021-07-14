@@ -6,7 +6,7 @@ Feature: View Solutions
 		  Given user should be on About home Page
 			When user clicks Solutions options
 			Then user should be able to view various solutions
-			
+		@Solution	
 		Scenario: Viewing various Solutions
 			And user clicks on Enterprise link
 			Then user should be on Enterprise page
