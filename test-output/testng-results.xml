@@ -2,22 +2,82 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-08T12:33:27 IST" name="Default suite" finished-at="2021-07-08T12:33:27 IST" duration-ms="46">
+  <suite started-at="2021-07-15T01:18:24 CST" name="Default suite" finished-at="2021-07-15T01:19:02 CST" duration-ms="37458">
     <groups>
     </groups>
-    <test started-at="2021-07-08T12:33:27 IST" name="Default test" finished-at="2021-07-08T12:33:27 IST" duration-ms="46">
-      <class name="Configuration.config">
-        <test-method signature="testConfig()[pri:0, instance:Configuration.config@503d687a]" started-at="2021-07-08T12:33:27 IST" name="testConfig" finished-at="2021-07-08T12:33:27 IST" duration-ms="7" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+    <test started-at="2021-07-15T01:18:24 CST" name="Default test" finished-at="2021-07-15T01:19:02 CST" duration-ms="37458">
+      <class name="testNG.PricingTestNg">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testNG.PricingTestNg@316bcf94]" started-at="2021-07-15T01:18:24 CST" name="setUpTest" finished-at="2021-07-15T01:18:44 CST" duration-ms="19237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="data(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testNG.PricingTestNg@316bcf94]" started-at="2021-07-15T01:18:45 CST" name="data" data-provider="form" finished-at="2021-07-15T01:19:01 CST" duration-ms="16097" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deepti]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pimoli]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Capgemini]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[deeptipimoli23@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7204424260]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[.Configuration\config.property (The system cannot find the path specified)]]>
+              <![CDATA[element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3SFL1BC', ip: '192.168.101.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d291cff0d379b27604e9a15801a030b4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: .Configuration\config.property (The system cannot find the path specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
-at Configuration.config.testConfig(config.java:18)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.124)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3SFL1BC', ip: '192.168.101.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:64831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d291cff0d379b27604e9a15801a030b4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at pomWithPageFactory.pricingPage.clickSubmitButton(pricingPage.java:91)
+at testNG.PricingTestNg.data(PricingTestNg.java:85)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,11 +108,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testConfig -->
-      </class> <!-- Configuration.config -->
+        </test-method> <!-- data -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testNG.PricingTestNg@316bcf94]" started-at="2021-07-15T01:19:01 CST" name="quit" finished-at="2021-07-15T01:19:02 CST" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testNG.PricingTestNg -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,8 +2,16 @@ ChromeDriver=C:\\Software\\chromedriver.exe
 
 browser = chrome
 
-URL=https://www.saucedemo.com
+baseUrl=https://www.saucedemo.com
+
+URL=https://saucelabs.com
 
 username=standard_user
 
 password=secret_sauce
+
+expectedTitle1=Swag Labs
+
+expectedTitle2=Cross Browser Testing, Selenium Testing, Mobile Testing | Sauce Labs
+
+wait=4000
